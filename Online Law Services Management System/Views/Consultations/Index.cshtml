@@ -1,0 +1,75 @@
+﻿@model IEnumerable<Online_Law_Services_Management_System.Models.Consultation>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Appointment.CaseDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Client.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fee.Profit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Lawyer.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ConsultationDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DesiredDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AssignedDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CurrentNoOfCasses)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Appointment.CaseDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Client.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fee.Profit)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Lawyer.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ConsultationDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DesiredDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AssignedDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CurrentNoOfCasses)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ConsultationId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ConsultationId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ConsultationId })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,66 @@
+﻿@model Online_Law_Services_Management_System.Models.Admin
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Admin</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Client.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Client.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Lawyer.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Lawyer.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Report.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Report.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AdminId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

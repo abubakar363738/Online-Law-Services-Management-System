@@ -1,0 +1,231 @@
+﻿@model IEnumerable<Online_Law_Services_Management_System.Models.Lawyer>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Expertise.Expertise1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Qualification.DegreeName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FatherName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LawyerEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Password)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Picture)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Street)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Town)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.City)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.District)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Province)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Country)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PostalCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CNIC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DOB)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MartialStatus)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gender)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MobileNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WhatsappNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Language)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PracticeCity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BarCouncil)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EnrollmentYear)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BarLicenseNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LawFirm)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirmAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Contribution)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Facebook)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LinkedIn)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HandledCases)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Expertise.Expertise1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Qualification.DegreeName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FatherName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LawyerEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Password)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Picture)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Street)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Town)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.City)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.District)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Province)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Country)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PostalCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CNIC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DOB)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MartialStatus)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Gender)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MobileNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WhatsappNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Language)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PracticeCity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BarCouncil)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EnrollmentYear)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BarLicenseNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LawFirm)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirmAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Contribution)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Facebook)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LinkedIn)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HandledCases)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.LawyerId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.LawyerId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.LawyerId })
+        </td>
+    </tr>
+}
+
+</table>

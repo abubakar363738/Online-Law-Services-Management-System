@@ -1,0 +1,290 @@
+﻿@model Online_Law_Services_Management_System.Models.Lawyer
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Lawyer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Expertise.Expertise1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Expertise.Expertise1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Qualification.DegreeName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Qualification.DegreeName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FatherName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FatherName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LawyerEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LawyerEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Picture)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Picture)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Street)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Street)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Town)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Town)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.City)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.City)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.District)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.District)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Province)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Province)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Country)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Country)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PostalCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PostalCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CNIC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CNIC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DOB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DOB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MartialStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MartialStatus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MobileNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MobileNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WhatsappNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WhatsappNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Language)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Language)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PracticeCity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PracticeCity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BarCouncil)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BarCouncil)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EnrollmentYear)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EnrollmentYear)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BarLicenseNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BarLicenseNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LawFirm)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LawFirm)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FirmAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirmAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Contribution)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Contribution)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Facebook)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Facebook)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LinkedIn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LinkedIn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HandledCases)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HandledCases)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.LawyerId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

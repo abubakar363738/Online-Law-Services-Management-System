@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Online_Law_Services_Management_System.Models.Fee>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Client.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Lawyer.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Profit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FeesStatus)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Client.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Lawyer.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Profit)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FeesStatus)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.FeesId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.FeesId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.FeesId })
+        </td>
+    </tr>
+}
+
+</table>

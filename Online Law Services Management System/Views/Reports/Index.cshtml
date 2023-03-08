@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Online_Law_Services_Management_System.Models.Report>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Client.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Lawyer.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Client.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Lawyer.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ReportId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ReportId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ReportId })
+        </td>
+    </tr>
+}
+
+</table>
