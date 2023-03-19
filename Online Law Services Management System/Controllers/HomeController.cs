@@ -26,5 +26,9 @@ namespace Online_Law_Services_Management_System.Controllers
 
             return View();
         }
+        public ActionResult ClientRegistration()
+        {
+            return View();
+        }
     }
 }

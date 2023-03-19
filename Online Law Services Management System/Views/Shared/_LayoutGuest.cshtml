@@ -39,7 +39,8 @@
                         <div class="col-xl-2 col-lg-2">
                             <div class="logo-img">
                                 <a href="index.html">
-                                    <img src="~/Content/UserSide/img/logo.png" alt="">
+                                    <!--  <img src="~/Content/UserSide/img/logo.png" alt="">  -->
+                                    <img src="~/Content/Logo/Logo.png" alt="" style="height:40% ; width:50%;border:double;border-block-color:white" />
                                 </a>
                             </div>
                         </div>
@@ -68,15 +69,26 @@
                                 </nav>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-2 d-none d-lg-block">
-                            <div class="social_media_links">
-                                <ul>
-                                    <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
-                                    <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
-                                    <li><a href="#"> <i class="fa fa-instagram"></i> </a></li>
-                                </ul>
+                        
+                        <div class="col-xl-2 col-lg-2">
+                            <div class="main-menu  d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                       
+                                        <li>
+                                            <a href="#">Register <i class="ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="blog.html">Register as Lawyer</a></li>
+                                                <li><a href="single-blog.html">Register as Client</a></li>
+                                            </ul>
+                                        </li>
+                                       
+                                        
+                                    </ul>
+                                </nav>
                             </div>
                         </div>
+                        
                         <div class="col-12">
                             <div class="mobile_menu d-block d-lg-none"></div>
                         </div>
@@ -86,28 +98,7 @@
         </div>
     </header>
     <!-- header-end -->
-    <!-- slider_area_start -->
-    <div class="slider_area ">
-        <div class="slider_area_inner slider_bg_1 d-flex align-items-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-7">
-                        <div class="single_slider">
-                            <div class="slider_text">
-                                <h3>
-                                    High Quality Law <br>
-                                    Advice and Support
-                                </h3>
-                                <p>Leading Polish Lawyer in your city</p>
-                                <a href="#" class="boxed-btn4 ">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- slider_area_end -->
+ 
 
     @RenderBody();
 

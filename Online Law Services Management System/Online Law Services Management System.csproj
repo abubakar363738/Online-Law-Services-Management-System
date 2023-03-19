@@ -173,6 +173,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Logo\Logo.png" />
     <Content Include="Content\UserSide\211 Lawyer DOC\css\font-awesome.min.css" />
     <Content Include="Content\UserSide\211 Lawyer DOC\css\main.css" />
     <Content Include="Content\UserSide\211 Lawyer DOC\css\normalize.min.css" />
@@ -228,6 +229,7 @@
     <Content Include="Content\UserSide\211 Lawyer DOC\syntax-highlighter\styles\shThemeRDark.css" />
     <Content Include="Content\UserSide\css\animate.css" />
     <Content Include="Content\UserSide\css\bootstrap.min.css" />
+    <Content Include="Content\UserSide\css\ClientRegistration.css" />
     <Content Include="Content\UserSide\css\flaticon.css" />
     <Content Include="Content\UserSide\css\font-awesome.min.css" />
     <Content Include="Content\UserSide\css\gijgo.css" />
@@ -318,6 +320,7 @@
     <Content Include="Content\UserSide\img\testmonial\testmonial_bg.png" />
     <Content Include="Content\UserSide\js\ajax-form.js" />
     <Content Include="Content\UserSide\js\bootstrap.min.js" />
+    <Content Include="Content\UserSide\js\ClientRegistration.js" />
     <Content Include="Content\UserSide\js\contact.js" />
     <Content Include="Content\UserSide\js\gijgo.min.js" />
     <Content Include="Content\UserSide\js\imagesloaded.pkgd.min.js" />
@@ -479,6 +482,7 @@
     <Content Include="Views\Reports\Details.cshtml" />
     <Content Include="Views\Reports\Edit.cshtml" />
     <Content Include="Views\Reports\Index.cshtml" />
+    <Content Include="Views\Home\ClientRegistration.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
